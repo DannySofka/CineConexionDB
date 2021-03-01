@@ -7,7 +7,7 @@ public class Category {
     private String categoryName;
     private Timestamp lastUpdate;
 
-    public Category(int id, String categoryName, Timestamp lastUpdate) {
+    public Category() {
         this.id = id;
         this.categoryName = categoryName;
         this.lastUpdate = lastUpdate;

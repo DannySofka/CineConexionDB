@@ -14,27 +14,23 @@ public class CineAppMain {
         do {
             System.out.println("---------------------");
             System.out.println(" Aplicación para proceso de renta de Películas ");
-            System.out.println("1. Ingresar nuevo usuario");
-            System.out.println("2. Iniciar proceso para rentar Película");
-            System.out.println("3. Ingrese nombre de Actor para ver Películas Disponibles");
-            System.out.println("5. Salir");
+            System.out.println("1. Crear");
+            System.out.println("2. listar");
+            System.out.println("3. Salir");
 
             //Leemos la opción ingresada por el usuario
             opcion = sc.nextInt();
 
             switch (opcion) {
                 case 1:
-                    CineAppService.crearUsuario();
+                    CineAppService.crear();
                     break;
                 case 2:
-                    CineAppService.rentarPelicula();
-                    break;
-                case 3:
-                    CineAppService.disponibilidadPelicula();
+                    CineAppService.listar();
                     break;
                 default:
                     break;
             }
-        } while (opcion != 5);
+        } while (opcion != 3);
     }
 }
